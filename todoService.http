@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Belongs to host",
+  "done": false
+}
+
+###
+GET http://localhost:3000/api/todos
+Accept: application/json
+X-Tenant-ID: 8ee1b168-0bc6-4b89-b873-cd2d4abd5414
+
+###
+
+GET http://localhost:3000/api/todos/fecf0ed8-d16e-4c0c-83d5-22663cbdb77a
+Accept: application/json
+
+###
+
+PUT http://localhost:3000/api/todos/fecf0ed8-d16e-4c0c-83d5-22663cbdb77a
+Content-Type: application/json
+
+{
+  "uuid": "fecf0ed8-d16e-4c0c-83d5-22663cbdb77a",
+  "title": "Learn Nest.js",
+  "done": true
+}
+
+###

@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/tenants
+Content-Type: application/json
+
+{
+  "name": "Tenant 1"
+}
+
+###
+GET http://localhost:3000/api/tenants
+Accept: application/json
+
+###
+
+GET http://localhost:3000/api/todos/fecf0ed8-d16e-4c0c-83d5-22663cbdb77a
+Accept: application/json
+
+###
+
+PUT http://localhost:3000/api/todos/fecf0ed8-d16e-4c0c-83d5-22663cbdb77a
+Content-Type: application/json
+
+{
+  "uuid": "fecf0ed8-d16e-4c0c-83d5-22663cbdb77a",
+  "title": "Learn Nest.js",
+  "done": true
+}
+
+###
